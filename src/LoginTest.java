@@ -124,15 +124,16 @@ public class LoginTest
 		driver.findElement(By.xpath(".//*[@id=':2b']/div[1]/div")).click();
 		driver.findElement(By.xpath(".//*[@id=':je']")).click();
 		
+		//LOG OUT FUNCTION CALL
 		LogoutTest.logout(driver);
 		
 //		//LOGOUT
 //		driver.findElement(By.xpath(".//*[@id='gb']/div[1]/div[1]/div[2]/div[4]/div[1]/a/span")).click();
 //		driver.findElement(By.linkText("Sign out")).click();
-//		Thread.sleep(3000);
-//		String loggedout = driver.getTitle();
-//		Assert.assertEquals("Gmail", loggedout);
-//		System.out.println("Successfully Logged out");
+		Thread.sleep(3000);
+		String loggedout = driver.getTitle();
+		Assert.assertEquals("Gmail", loggedout);
+		System.out.println("Successfully Logged out");
 		
 		
 		//QUIT
